@@ -35,6 +35,7 @@
             this.sButton3 = new Sipaa.Framework.SButton();
             this.sButton2 = new Sipaa.Framework.SButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.sButton4 = new Sipaa.Framework.SButton();
             this.sPanel1.SuspendLayout();
             this.sPanel4.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +87,7 @@
             this.sPanel4.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.sPanel4.BorderRadius = 6;
             this.sPanel4.BorderSize = 0;
+            this.sPanel4.Controls.Add(this.sButton4);
             this.sPanel4.Controls.Add(this.sButton3);
             this.sPanel4.Controls.Add(this.sButton2);
             this.sPanel4.Controls.Add(this.label1);
@@ -104,12 +106,14 @@
             this.sButton3.BorderSize = 0;
             this.sButton3.FlatAppearance.BorderSize = 0;
             this.sButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.sButton3.ForeColor = System.Drawing.Color.White;
-            this.sButton3.Location = new System.Drawing.Point(115, 38);
+            this.sButton3.Location = new System.Drawing.Point(14, 131);
             this.sButton3.Name = "sButton3";
             this.sButton3.Size = new System.Drawing.Size(95, 87);
             this.sButton3.TabIndex = 2;
             this.sButton3.Text = "TestFrm";
+            this.sButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.sButton3.UseVisualStyleBackColor = false;
             this.sButton3.Click += new System.EventHandler(this.sButton3_Click);
             // 
@@ -143,6 +147,26 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Pinned";
             // 
+            // sButton4
+            // 
+            this.sButton4.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.sButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.sButton4.BorderRadius = 6;
+            this.sButton4.BorderSize = 0;
+            this.sButton4.FlatAppearance.BorderSize = 0;
+            this.sButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.sButton4.ForeColor = System.Drawing.Color.White;
+            this.sButton4.Image = global::SipaaSODE.Properties.Resources.icons8_pen_48;
+            this.sButton4.Location = new System.Drawing.Point(115, 38);
+            this.sButton4.Name = "sButton4";
+            this.sButton4.Size = new System.Drawing.Size(95, 87);
+            this.sButton4.TabIndex = 3;
+            this.sButton4.Text = "Sipaa Suite";
+            this.sButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.sButton4.UseVisualStyleBackColor = false;
+            this.sButton4.Click += new System.EventHandler(this.sButton4_Click);
+            // 
             // Desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,6 +195,7 @@
         private Sipaa.Framework.SButton sButton2;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Sipaa.Framework.SButton sButton4;
     }
 }
 

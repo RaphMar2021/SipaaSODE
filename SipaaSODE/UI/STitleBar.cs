@@ -20,7 +20,7 @@ namespace SipaaSODE.UI
         private Sipaa.Framework.SButton sButton3;
         private Color _eForeColor;
         private bool _disableMaximize;
-
+        Sipaa.Framework.SEllipse ellipse;
         public STitleBar()
         {
             
@@ -32,7 +32,7 @@ namespace SipaaSODE.UI
 
         public App Parent
         {
-            get { return _parent; } set { _parent = value; Sipaa.Framework.SEllipse ellipse = new Sipaa.Framework.SEllipse();
+            get { return _parent; } set { _parent = value; ellipse = new Sipaa.Framework.SEllipse();
                 Sipaa.Framework.SDragControl dragcontrol = new Sipaa.Framework.SDragControl();
                 dragcontrol.TargetControl = this;
                 ellipse.TargetControl = this._parent;
@@ -41,7 +41,21 @@ namespace SipaaSODE.UI
                 value.TextChanged += _parent_TextChanged;
                 value.PropertyChanged += _parent_PropertyChanged;
                 pictureBox1.Image = value.Icon.ToBitmap();
+                value.SizeChanged += Value_SizeChanged;
             }
+        }
+
+        private void Value_SizeChanged(object sender, EventArgs e)
+        {
+            if (Parent != null)
+                if (Parent.WindowState == FormWindowState.Maximized)
+                {
+                    this.ellipse.CornerRadius = 0;
+                }
+                else
+                {
+                    this.ellipse.CornerRadius = 11;
+                }
         }
 
         private void _parent_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)

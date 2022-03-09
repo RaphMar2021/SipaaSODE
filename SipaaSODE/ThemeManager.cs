@@ -18,7 +18,7 @@ namespace SipaaSODE.UI
     }
     public class ThemeManager : Component
     {
-        ColorPalette _palette;
+        public ColorPalette _palette;
         private Theme _theme;
         bool _enableSaero;
         Form _parent;
@@ -143,6 +143,70 @@ namespace SipaaSODE.UI
                     STitleBar tb = (STitleBar)c;
                     tb.BackColor = _palette.panelBackgroundColor;
                     tb.ElementsForeColor = _palette.globalForeColor;
+                }
+                else if (c.GetType() == typeof(FlowLayoutPanel))
+                {
+                    foreach (Control c2 in c.Controls)
+                    {
+                        if (c2.GetType() == typeof(SButton))
+                        {
+                            c2.ForeColor = _palette.globalForeColor;
+                            c2.BackColor = Color.Transparent;
+                        }
+                        else if (c2.GetType() == typeof(SPanel))
+                        {
+                            c2.BackColor = _palette.panelBackgroundColor;
+                            c2.ForeColor = _palette.globalForeColor;
+                        }
+                        else if (c2.GetType() == typeof(Label))
+                        {
+                            c2.BackColor = Color.Transparent;
+                            c2.ForeColor = _palette.globalForeColor;
+                        }
+                    }
+                    c.BackColor = Color.Transparent;
+                    c.ForeColor = _palette.globalForeColor;
+                }
+                else if (c.GetType() == typeof(Panel))
+                {
+                    foreach (Control c2 in c.Controls)
+                    {
+                        if (c2.GetType() == typeof(SButton))
+                        {
+                            c2.ForeColor = _palette.globalForeColor;
+                            c2.BackColor = Color.Transparent;
+                        }
+                        else if (c2.GetType() == typeof(SPanel))
+                        {
+                            foreach (Control c3 in c2.Controls)
+                            {
+                                if (c3.GetType() == typeof(SButton))
+                                {
+                                    c3.ForeColor = _palette.globalForeColor;
+                                    c3.BackColor = Color.Transparent;
+                                }
+                                else if (c3.GetType() == typeof(SPanel))
+                                {
+                                    c3.BackColor = _palette.panelBackgroundColor;
+                                    c3.ForeColor = _palette.globalForeColor;
+                                }
+                                else if (c3.GetType() == typeof(Label))
+                                {
+                                    c3.BackColor = Color.Transparent;
+                                    c3.ForeColor = _palette.globalForeColor;
+                                }
+                            }
+                            c2.BackColor = _palette.panelBackgroundColor;
+                            c2.ForeColor = _palette.globalForeColor;
+                        }
+                        else if (c2.GetType() == typeof(Label))
+                        {
+                            c2.BackColor = Color.Transparent;
+                            c2.ForeColor = _palette.globalForeColor;
+                        }
+                    }
+                    c.BackColor = _palette.panelBackgroundColor;
+                    c.ForeColor = _palette.globalForeColor;
                 }
             }
         }

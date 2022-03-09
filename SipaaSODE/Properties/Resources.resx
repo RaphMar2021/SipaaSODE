@@ -118,13 +118,67 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="save_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sipaabg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sipaabg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_+_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_+_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sipaasuitelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sipaasuitelogo.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undo_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undo_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="typewriter_with_paper_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\typewriter_with_paper_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paste_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paint_bucket_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paint_bucket_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cut_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cut_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redo_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redo_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="system_task_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\system_task_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Color Swatch_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Color Swatch_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="font_style_formatting_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\font_style_formatting_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_pen_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_pen_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eraser_tool_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eraser_tool_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paint_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paint_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_shield_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_shield_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_zoom_to_actual_size_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_zoom_to_actual_size_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

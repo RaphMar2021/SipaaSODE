@@ -30,7 +30,10 @@ namespace SipaaSODE.Types
         private void App_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle= FormBorderStyle.None;
+            // Exeptions (dont show maximize button on dialogs...)
             if (this.Text == "Task Manager") { this.titleBar.EnableMaximizeButton = false; }
+            else if (this.Text == "SipaaSuite : Home") { this.titleBar.EnableMaximizeButton = false; }
+            else if (this.Name.Contains("Dialog")) { this.titleBar.EnableMaximizeButton = false; }
         }
 
         protected void OnPropertyChanged(PropertyChangedEventArgs e)

@@ -1,6 +1,11 @@
-﻿using System;
+﻿// .NET imports
+using System;
 using System.Drawing;
 using System.Windows.Forms;
+
+// Desktop environment imports
+using SipaaSODE.Apps;
+using SipaaSODE.Apps.SipaaSuite;
 using SipaaSODE.Managers;
 using SipaaSODE.Types;
 using SipaaSODE.UI;
@@ -12,13 +17,13 @@ namespace SipaaSODE
         public AppManager manager;
         public Panel formpane;
         public static ThemeManager themeManager;
-
+        public Theme globalTheme = Theme.Light;
         public Desktop()
         {
             InitializeComponent();
             themeManager = new ThemeManager(this);
-            themeManager.EnableSaero = true;
-            themeManager.theme = Theme.Dark;
+            themeManager.EnableSaero = false;
+            themeManager.theme = globalTheme;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = new Point(0, 0);
             this.StartPosition = FormStartPosition.Manual;
@@ -62,6 +67,11 @@ namespace SipaaSODE
         private void sButton3_Click(object sender, EventArgs e)
         {
             OpenAppAndHideStartMenu(new TestFrm());
+        }
+
+        private void sButton4_Click(object sender, EventArgs e)
+        {
+            OpenAppAndHideStartMenu(new SipaaSuiteHome());
         }
     }
 }

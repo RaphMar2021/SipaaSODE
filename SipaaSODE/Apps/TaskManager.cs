@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SipaaSODE
+namespace SipaaSODE.Apps
 {
     public partial class TaskManager : App
     {
@@ -22,7 +22,7 @@ namespace SipaaSODE
             GetRunningApps();
             themeManager = new ThemeManager(this);
             themeManager.EnableSaero = false;
-            themeManager.theme = Theme.Light;
+            themeManager.theme = Program.desktop.globalTheme;
             Program.desktop.manager.runningapps.ItemAdded += Manager_AppStarted;
             Program.desktop.manager.runningapps.ItemRemoved += Manager_AppClosed;
         }

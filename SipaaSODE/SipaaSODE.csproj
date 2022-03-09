@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Cyotek.Windows.Forms.ColorPicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cyotek.Windows.Forms.ColorPicker.1.7.2\lib\net35\Cyotek.Windows.Forms.ColorPicker.dll</HintPath>
+    </Reference>
     <Reference Include="SipaaFramework, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SipaaFramework.1.1.0\lib\net46\SipaaFramework.dll</HintPath>
     </Reference>
@@ -49,27 +52,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Apps\SipaaSuite\SipaaSuiteDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\SipaaSuite\SipaaSuiteDraw.Designer.cs">
+      <DependentUpon>SipaaSuiteDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\SipaaSuite\SipaaSuiteHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\SipaaSuite\SipaaSuiteHome.Designer.cs">
+      <DependentUpon>SipaaSuiteHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\SipaaSuite\SipaaSuiteWriter.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Desktop.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Desktop.Designer.cs">
       <DependentUpon>Desktop.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\ColorPickerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ColorPickerDialog.Designer.cs">
+      <DependentUpon>ColorPickerDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Drawing\ColorPalette.cs" />
     <Compile Include="Events.cs" />
     <Compile Include="Managers\AppManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaskManager.cs">
+    <Compile Include="Apps\TaskManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TaskManager.Designer.cs">
+    <Compile Include="Apps\TaskManager.Designer.cs">
       <DependentUpon>TaskManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestFrm.cs">
+    <Compile Include="Apps\TestFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestFrm.Designer.cs">
+    <Compile Include="Apps\TestFrm.Designer.cs">
       <DependentUpon>TestFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemeManager.cs">
@@ -77,6 +101,9 @@
     </Compile>
     <Compile Include="Types\App.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Types\NoThemePanel.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Types\ProgramList.cs" />
     <Compile Include="UI\SDragControl.cs">
@@ -94,8 +121,20 @@
     <Compile Include="UserAccountControl.Designer.cs">
       <DependentUpon>UserAccountControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Apps\SipaaSuite\SipaaSuiteDraw.resx">
+      <DependentUpon>SipaaSuiteDraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\SipaaSuite\SipaaSuiteHome.resx">
+      <DependentUpon>SipaaSuiteHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\SipaaSuite\SipaaSuiteWriter.resx">
+      <DependentUpon>SipaaSuiteWriter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Desktop.resx">
       <DependentUpon>Desktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ColorPickerDialog.resx">
+      <DependentUpon>ColorPickerDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,10 +146,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TaskManager.resx">
+    <EmbeddedResource Include="Apps\TaskManager.resx">
       <DependentUpon>TaskManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestFrm.resx">
+    <EmbeddedResource Include="Apps\TestFrm.resx">
       <DependentUpon>TestFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\STitleBar.resx">
@@ -137,11 +176,30 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\undo_48px.png" />
+    <None Include="Resources\Color Swatch_48px.png" />
+    <None Include="Resources\copy_48px.png" />
+    <None Include="Resources\cut_48px.png" />
+    <None Include="Resources\file_48px.png" />
+    <None Include="Resources\font_style_formatting_48px.png" />
+    <None Include="Resources\home_48px.png" />
+    <None Include="Resources\eraser_tool_48px.png" />
+    <Content Include="Resources\icons8_pen.ico" />
+    <Content Include="Resources\icons8_pen_48.png" />
     <Content Include="Resources\icons8_shield.ico" />
     <Content Include="Resources\icons8_shield_48.png" />
     <Content Include="Resources\icons8_system_task.ico" />
+    <None Include="Resources\paste_48px.png" />
+    <None Include="Resources\plus_+_48px.png" />
+    <None Include="Resources\redo_48px.png" />
+    <None Include="Resources\save_48px.png" />
+    <None Include="Resources\paint_96px.png" />
+    <None Include="Resources\paint_bucket_48px.png" />
+    <None Include="Resources\icons8_zoom_to_actual_size_48.png" />
     <Content Include="Resources\sipaabg.png" />
+    <Content Include="Resources\sipaasuitelogo.bmp" />
     <Content Include="Resources\system_task_48px.png" />
+    <None Include="Resources\typewriter_with_paper_96px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

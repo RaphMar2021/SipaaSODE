@@ -1,4 +1,4 @@
-﻿namespace SipaaSODE
+﻿namespace SipaaSODE.Apps
 {
     partial class TaskManager
     {
